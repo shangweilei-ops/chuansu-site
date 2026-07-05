@@ -1,0 +1,7 @@
+# URL redirects (placeholders — adjust after custom domain is set)
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Force HTTPS — handled by Cloudflare automatically
+# Force www to apex — handled by Cloudflare DNS
+
+# (no other redirects needed for now)

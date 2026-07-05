@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Cloudflare edge cache will serve static assets fast
+Sitemap: https://chuansushang.com/sitemap.xml
