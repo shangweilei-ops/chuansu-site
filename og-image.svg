@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F1"/>
+      <stop offset="100%" stop-color="#F5F0E5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="85%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="rgba(255, 107, 53, 0.18)"/>
+      <stop offset="100%" stop-color="rgba(255, 107, 53, 0)"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(10, 14, 26, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Brand mark -->
+  <g transform="translate(80, 80)">
+    <rect width="64" height="64" rx="14" fill="#FF6B35"/>
+    <text x="32" y="44" font-family="Inter, sans-serif" font-size="32" font-weight="600" text-anchor="middle" fill="white" letter-spacing="-1.5">JS</text>
+  </g>
+
+  <!-- Eyebrow -->
+  <g transform="translate(80, 200)">
+    <rect x="0" y="0" width="320" height="40" rx="20" fill="rgba(255, 107, 53, 0.1)" stroke="rgba(255, 107, 53, 0.3)"/>
+    <circle cx="22" cy="20" r="5" fill="#FF6B35"/>
+    <text x="40" y="26" font-family="JetBrains Mono, monospace" font-size="14" font-weight="500" letter-spacing="2" fill="#D44A1B">CLASS OF 2027 · 27FALL</text>
+  </g>
+
+  <!-- Title -->
+  <g transform="translate(80, 280)">
+    <text x="0" y="80" font-family="Instrument Serif, Georgia, serif" font-size="88" font-weight="400" letter-spacing="-3" fill="#0A0E1A">How materials <tspan font-style="italic" fill="#FF6B35">protect</tspan></text>
+    <text x="0" y="180" font-family="Instrument Serif, Georgia, serif" font-size="88" font-weight="400" letter-spacing="-3" fill="#0A0E1A">the <tspan font-style="italic" fill="#FF6B35">systems we live in</tspan>.</text>
+  </g>
+
+  <!-- Subtitle -->
+  <g transform="translate(80, 530)">
+    <text x="0" y="0" font-family="Instrument Serif, Georgia, serif" font-size="26" font-style="italic" fill="#4A5568">Jason Shang · Materials Science · Chemistry · AI</text>
+  </g>
+
+  <!-- Right-side accent: 3 layers -->
+  <g transform="translate(880, 200)">
+    <text x="0" y="0" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2" fill="#8B95A5">THESIS</text>
+    <text x="0" y="40" font-family="Instrument Serif, serif" font-size="40" font-style="italic" fill="#0A0E1A">Material ·</text>
+    <text x="0" y="90" font-family="Instrument Serif, serif" font-size="40" font-style="italic" fill="#2563EB">Product ·</text>
+    <text x="0" y="140" font-family="Instrument Serif, serif" font-size="40" font-style="italic" fill="#10B981">Human</text>
+
+    <line x1="0" y1="180" x2="120" y2="180" stroke="#FF6B35" stroke-width="2"/>
+    <text x="0" y="210" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="1.5" fill="#8B95A5">SHANGHAI · CN</text>
+    <text x="0" y="230" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="1.5" fill="#8B95A5">SHENZHEN MIDDLE SCHOOL</text>
+  </g>
+</svg>

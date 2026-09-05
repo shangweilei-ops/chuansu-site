@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jason Shang · 商传溯 · Materials for Fragile Systems</title>
-  <meta name="description" content="商传溯（Jason Shang），深圳中学高二。从火灾风险出发，用材料科学理解保护、修复与人类行为。申请方向：化学 / 材料科学（水凝胶 · 皮肤修复）。">
-  <meta property="og:title" content="Jason Shang · Materials for Fragile Systems">
-  <meta property="og:description" content="用材料科学保护脆弱系统——从灭火到水凝胶，从产品到人性认知。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#FAF7F1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)">
+  <title>Jason Shang · Materials for Fragile Systems · 27Fall</title>
+  <meta name="description" content="Jason Shang (Chuansu Shang) — Shenzhen, CN. Class of 2027. Building a single thesis across materials, product, and human: how functional materials protect fragile systems before failure becomes visible. Applications in fire safety, hydrogel skin repair, and AI for drug discovery.">
+  <meta property="og:title" content="Jason Shang · Materials for Fragile Systems · 27Fall">
+  <meta property="og:description" content="A single thesis — material, product, human — across fire safety, hydrogel skin repair, and AI drug repositioning. 27Fall applicant to Stanford REA, JHU ED2, UCB, Northwestern, UPenn, UC system, and HKUST IRE.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chuansu-site.shangweilei.workers.dev/">
-  <meta property="og:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.jpg">
+  <meta property="og:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.svg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Jason Shang">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jason Shang · Materials for Fragile Systems">
-  <meta name="twitter:description" content="用材料科学保护脆弱系统——从灭火到水凝胶，从产品到人性认知。">
-  <meta name="twitter:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.jpg">
+  <meta name="twitter:title" content="Jason Shang · Materials for Fragile Systems · 27Fall">
+  <meta name="twitter:description" content="A single thesis across materials, product, and human. 27Fall global applicant.">
+  <meta name="twitter:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.svg">
   <meta name="author" content="Jason Shang">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <!-- Fonts -->
+  <!-- Fonts: Instrument Serif (display) + Inter (body) + JetBrains Mono (meta) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -32,41 +34,51 @@
   <!-- ============ NAVIGATION ============ -->
   <nav class="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="nav__brand">
+      <a href="index.html" class="nav__brand" aria-label="Jason Shang home">
         <span class="nav__mark">JS</span>
         <span>Jason Shang</span>
       </a>
       <button class="nav__menu-btn" aria-label="Toggle menu" aria-expanded="false">
-        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="0" y1="2" x2="18" y2="2"/><line x1="0" y1="12" x2="18" y2="12"/><line x1="0" y1="7" x2="18" y2="7"/></svg>
+        <svg class="open" width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="2" y1="2" x2="16" y2="2"/><line x1="2" y1="7" x2="16" y2="7"/><line x1="2" y1="12" x2="16" y2="12"/></svg>
+        <svg class="close" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="3" x2="15" y2="15"/><line x1="15" y1="3" x2="3" y2="15"/></svg>
       </button>
       <ul class="nav__links">
         <li><a href="index.html">Home</a></li>
         <li><a href="research/index.html">Research</a></li>
-        <li><a href="projects/safehome/index.html">SafeHome</a></li>
-        <li><a href="projects/chemisfun/index.html">Chemisfun</a></li>
+        <li><a href="projects/safehome/index.html">Projects</a></li>
         <li><a href="writing/index.html">Writing</a></li>
         <li><a href="about/index.html">About</a></li>
       </ul>
+      <div class="nav__tools">
+        <button class="nav__theme" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-icon-light">☀</span>
+          <span class="theme-icon-dark">☾</span>
+        </button>
+      </div>
     </div>
   </nav>
 
   <!-- ============ HERO ============ -->
   <header class="hero">
     <div class="container hero__inner">
-      <div class="hero__eyebrow reveal">Class of 2027 · Materials Science &middot; Chemistry</div>
+      <div class="hero__eyebrow reveal">
+        <span class="dot"></span>
+        Class of 2027 · 27Fall Global Application
+      </div>
       <h1 class="hero__title reveal">
-        用材料科学 <em>保护</em><br>
-        那些 <em>脆弱的系统</em>。
+        How materials <em>protect</em><br>
+        the <em>systems we live in</em>.
       </h1>
       <p class="hero__sub reveal">
-        I'm Jason Shang — a high-school researcher working on hydrogels,
-        fire-safe materials, and skin repair. I build products that go
-        into real homes, and I write science that real people can believe.
+        I'm Jason Shang — a high-school researcher working on fire-safe
+        materials, hydrogel skin repair, and AI for drug discovery.
+        I build products that go into real homes, and I write science
+        that real people can believe.
       </p>
       <div class="hero__meta reveal">
         <div class="hero__meta-item">
           <span class="hero__meta-key">Focus</span>
-          <span class="hero__meta-val">Hydrogel · Skin Repair</span>
+          <span class="hero__meta-val">Hydrogel · Fire safety · AI</span>
         </div>
         <div class="hero__meta-item">
           <span class="hero__meta-key">GPA</span>
@@ -84,35 +96,67 @@
     </div>
   </header>
 
-  <!-- ============ INTRO: ONE PARAGRAPH ============ -->
+  <!-- ============ ICICR 2026 PUBLICATION HIGHLIGHT ============ -->
+  <section class="pub-highlight">
+    <div class="container">
+      <a href="research/index.html#icicr" class="pub-highlight__inner reveal" style="text-decoration: none; color: inherit;">
+        <div class="pub-highlight__badge" aria-hidden="true">P</div>
+        <div class="pub-highlight__body">
+          <div class="pub-highlight__kind">📄 Publication · Accepted Aug 2026</div>
+          <h3 class="pub-highlight__title">
+            Multi-Modal Deep Learning for Alzheimer's Drug Repositioning:
+            GNN + Transformers + Knowledge Graphs with Uncertainty Quantification
+          </h3>
+          <div class="pub-highlight__meta">
+            Authors: <strong style="color: var(--c-ink);">Xiuqin Shang, Chuansu Shang</strong> ·
+            ICICR 2026 · Paris, France · June 12–14, 2026 ·
+            Paper ID: A20260302530339
+          </div>
+        </div>
+        <div class="pub-highlight__cta">
+          Read paper <span>→</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ THESIS ============ -->
   <section class="section">
     <div class="container container--narrow">
       <div class="section-head">
         <span class="section-head__num">01 · Thesis</span>
         <h2 class="section-head__title">A single question, asked three ways.</h2>
         <p class="section-head__lede">
-          灭火和皮肤修复，表面上一个面向环境、一个面向身体，本质上都在回答同一个问题——
-          <em>材料如何在极端条件下保护脆弱系统？</em>
+          Fire extinguishing and skin repair look like very different problems —
+          one faces the environment, one faces the body. Both answer the same
+          underlying question:
+          <em>how do materials protect fragile systems before failure becomes visible?</em>
         </p>
       </div>
-      <p style="font-family: var(--f-serif); font-size: 1.15rem; line-height: 1.7; color: var(--c-ink-2);">
-        我从初三开始研究灭火材料，把一个原型带进了真实的家庭和学校。后来我开始做 Chemisfun，把复杂的化学讲给普通人听。再后来我走进了实验室，跟随 Garcia 教授研究水凝胶，把同一类材料思维从环境推向身体——伤口愈合、组织修复、皮肤屏障。
+      <p style="font-family: var(--f-serif); font-size: 1.2rem; line-height: 1.7; color: var(--c-ink-2);">
+        I started in ninth grade with fire-suppressant materials and brought
+        a prototype into real homes and schools. Then I built
+        <strong>Chemisfun</strong>, translating complex chemistry for ordinary
+        readers. Then I walked into Prof. Garcia's lab to study hydrogels,
+        pushing the same material thinking from environment into the body —
+        wound healing, tissue repair, skin barrier.
       </p>
-      <p style="font-family: var(--f-serif); font-size: 1.15rem; line-height: 1.7; color: var(--c-ink-2);">
-        这条线串起来只有一个动作：<strong style="color: var(--c-ink);">用材料保护脆弱系统。</strong>
+      <p style="font-family: var(--f-serif); font-size: 1.2rem; line-height: 1.7; color: var(--c-ink-2);">
+        One thread ties it together: <strong style="color: var(--c-ink);">using materials to protect fragile systems.</strong>
       </p>
     </div>
   </section>
 
   <!-- ============ THREE LAYERS ============ -->
-  <section class="section section--tight" style="background: var(--c-card-2); border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);">
+  <section class="section section--paper">
     <div class="container">
       <div class="section-head">
         <span class="section-head__num">02 · Architecture</span>
         <h2 class="section-head__title">Three layers, one conviction.</h2>
         <p class="section-head__lede">
-          材料层 · 产品层 · 人性层。第三层是我和大多数科研型申请者拉开差距的地方——
-          真正的安全不只来自技术，也来自人愿意相信风险。
+          Material layer. Product layer. Human layer.
+          The third is where I stand apart from most research-oriented applicants —
+          real safety lives in whether a person is willing to believe the risk.
         </p>
       </div>
 
@@ -120,10 +164,11 @@
         <div class="layer">
           <div class="layer__num">LAYER 01</div>
           <h3 class="layer__title">Material</h3>
-          <p class="layer__question">什么材料能灭火、降温、修复？</p>
+          <p class="layer__question">What materials can extinguish, cool, and repair?</p>
           <p class="layer__body">
-            从水凝胶的分子网络，到灭火涂层的热力学机制，到组织修复中的生物相容性——
-            我想理解材料在极端条件下<em>为什么</em>工作，而不只是<em>是否</em>工作。
+            From hydrogel networks to fire-retardant coatings to bio-compatible
+            scaffolds — I want to understand <em>why</em> materials work in extreme
+            conditions, not just <em>whether</em> they work.
           </p>
           <ul class="layer__examples">
             <li>Hydrogel networks</li>
@@ -132,30 +177,32 @@
           </ul>
         </div>
 
-        <div class="layer">
+        <div class="layer layer--02">
           <div class="layer__num">LAYER 02</div>
           <h3 class="layer__title">Product</h3>
-          <p class="layer__question">材料如何进入真实家庭、学校、宿舍、社区？</p>
+          <p class="layer__question">How do materials reach real homes, schools, dorms, communities?</p>
           <p class="layer__body">
-            一个只在实验室里"work"的东西，对我来说还不够。我做的灭火材料原型真的被装进了
-            校园宿舍和社区消防角。SafeHome 是这条产品线的延伸——
-            <em>从烧杯到货架</em>，每一毫米都要被打磨。
+            Something that "works" in a lab isn't enough for me.
+            My fire-suppressant prototypes have been deployed into campus
+            dorms and community fire-safety stations.
+            <em>From beaker to shelf</em> — every millimeter has to be earned.
           </p>
           <ul class="layer__examples">
             <li>SafeHome · fire-safety kits</li>
-            <li>School & dorm pilots</li>
+            <li>School &amp; dorm pilots</li>
             <li>Community deployment</li>
           </ul>
         </div>
 
-        <div class="layer">
+        <div class="layer layer--03">
           <div class="layer__num">LAYER 03</div>
           <h3 class="layer__title">Human</h3>
-          <p class="layer__question">为什么人明知道风险，却不相信灾难会发生？</p>
+          <p class="layer__question">Why do people know the risk, yet not believe disaster can happen?</p>
           <p class="layer__body">
-            我研究防火、做过科普、知道火灾危险。但火警响起的一瞬间，
-            我的第一反应仍然是"不可能是真的"。这一秒让我意识到——
-            <em>真正的缺口不在知道，而在相信。</em>
+            I research fire safety, run science communication, know the danger.
+            But the moment the fire alarm rang, my first reaction was
+            <em>"this can't be real"</em>. That one second taught me —
+            <em>the real gap is not knowing, but believing.</em>
           </p>
           <ul class="layer__examples">
             <li>Risk perception</li>
@@ -180,82 +227,96 @@
   </section>
 
   <!-- ============ FEATURED WORK ============ -->
-  <section class="section" style="background: var(--c-paper);">
+  <section class="section" style="background: var(--c-card-2); border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);">
     <div class="container">
       <div class="section-head">
         <span class="section-head__num">03 · Featured Work</span>
         <h2 class="section-head__title">The projects that built this thesis.</h2>
         <p class="section-head__lede">
-          从分子到人群——这些项目不是平行的活动列表，而是同一条主线在不同尺度的展开。
+          From molecule to crowd — these projects are not a parallel activity
+          list. They are the same thesis unfolding at different scales.
         </p>
       </div>
 
       <div class="work-grid">
         <a href="research/index.html" class="work-card reveal">
-          <img class="work-card__thumb" src="assets/img/research-lab.jpg" alt="在 Garcia 实验室做水凝胶合成的日常工作">
-          <div class="work-card__kind work-card__kind--research">Research · Lab</div>
-          <h3 class="work-card__title">Hydrogel &amp; Skin Repair</h3>
-          <p class="work-card__lede">
-            材料如何在极端条件下保护人体？
-          </p>
-          <p class="work-card__excerpt">
-            在 Garcia 教授课题组参与水凝胶方向研究，关注材料结构、生物相容性与伤口微环境的耦合。
-            正在推进一项关于 skin repair 的实验，目标产出论文 / 海报 / 推荐信三选一。
-          </p>
-          <div class="work-card__meta">
-            <span>2025 — Present</span>
-            <span class="work-card__arrow">→</span>
+          <div class="work-card__media">
+            <img class="work-card__thumb" src="assets/img/research-lab.jpg" alt="Daily work in Garcia Lab — hydrogel synthesis" loading="lazy">
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__kind work-card__kind--research">Research · Lab</div>
+            <h3 class="work-card__title">Hydrogel &amp; Skin Repair</h3>
+            <p class="work-card__lede">How can materials protect the human body under extreme conditions?</p>
+            <p class="work-card__excerpt">
+              Working with Prof. Garcia on hydrogels — material structure,
+              biocompatibility, and coupling with the wound microenvironment.
+              Pushing toward a paper / poster / recommendation letter.
+            </p>
+            <div class="work-card__foot">
+              <span>2025 — Present</span>
+              <span class="work-card__arrow">→</span>
+            </div>
           </div>
         </a>
 
         <a href="projects/safehome/index.html" class="work-card reveal">
-          <img class="work-card__thumb" src="assets/img/safehome-test.jpg" alt="灭火材料的真实测试场景">
-          <div class="work-card__kind work-card__kind--product">Product · Field</div>
-          <h3 class="work-card__title">SafeHome</h3>
-          <p class="work-card__lede">
-            把家庭灭火材料从实验室搬进真实场景。
-          </p>
-          <p class="work-card__excerpt">
-            自主研发灭火涂层 / 灭火贴片 / 应急包，已经进入校园宿舍、社区消防角与多个真实家庭试点。
-            产品设计紧扣"让一个不想准备的人也能用"。
-          </p>
-          <div class="work-card__meta">
-            <span>2023 — Present</span>
-            <span class="work-card__arrow">→</span>
+          <div class="work-card__media">
+            <img class="work-card__thumb" src="assets/img/safehome-test.jpg" alt="Field test of fire-suppressant material" loading="lazy">
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__kind work-card__kind--product">Product · Field</div>
+            <h3 class="work-card__title">SafeHome</h3>
+            <p class="work-card__lede">Bringing household fire-suppressant materials from lab into real life.</p>
+            <p class="work-card__excerpt">
+              Self-developed fire-retardant coatings, suppression patches,
+              and emergency kits — already piloted in campus dorms, community
+              fire-safety stations, and real households. Designed so a person
+              who doesn't want to prepare can still use it.
+            </p>
+            <div class="work-card__foot">
+              <span>2023 — Present</span>
+              <span class="work-card__arrow">→</span>
+            </div>
           </div>
         </a>
 
         <a href="projects/chemisfun/index.html" class="work-card reveal">
-          <img class="work-card__thumb" src="assets/img/chemisfun-kids.jpg" alt="线下化学科普活动 · 和小朋友互动">
-          <div class="work-card__kind work-card__kind--community">Communication · Outreach</div>
-          <h3 class="work-card__title">Chemisfun</h3>
-          <p class="work-card__lede">
-            把复杂化学讲给愿意相信的人。
-          </p>
-          <p class="work-card__excerpt">
-            化学科普平台 / 公众号 / 视频 / 线下实验。把"我懂化学"变成"我能让你也懂"。
-            我相信这是材料科学落地前最被低估的一环。
-          </p>
-          <div class="work-card__meta">
-            <span>2022 — Present</span>
-            <span class="work-card__arrow">→</span>
+          <div class="work-card__media">
+            <img class="work-card__thumb" src="assets/img/chemisfun-kids.jpg" alt="In-person science outreach with kids" loading="lazy">
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__kind work-card__kind--community">Communication · Outreach</div>
+            <h3 class="work-card__title">Chemisfun</h3>
+            <p class="work-card__lede">Translating complex chemistry for people willing to believe.</p>
+            <p class="work-card__excerpt">
+              A science communication platform — articles, videos, in-person
+              experiments. From "I understand chemistry" to "I can make you
+              understand it too." I believe this is the most underestimated
+              step before any material science reaches the real world.
+            </p>
+            <div class="work-card__foot">
+              <span>2022 — Present</span>
+              <span class="work-card__arrow">→</span>
+            </div>
           </div>
         </a>
 
         <a href="about/index.html" class="work-card reveal">
-          <img class="work-card__thumb" src="assets/img/safehome-mall.jpg" alt="商场演讲 · 社区宣讲现场">
-          <div class="work-card__kind">Profile · 27Fall</div>
-          <h3 class="work-card__title">About Jason</h3>
-          <p class="work-card__lede">
-            深中国际部 · 一份不模板化的申请画像。
-          </p>
-          <p class="work-card__excerpt">
-            GPA 4.52 / SAT 1570 / TOEFL 117 / 11门 AP 全 5。
-            但数字从来不是人设——它们只是入场券。
-          </p>
-          <div class="work-card__meta">
-            <span>Read CV &middot; Activities</span>
-            <span class="work-card__arrow">→</span>
+          <div class="work-card__media">
+            <img class="work-card__thumb" src="assets/img/safehome-mall.jpg" alt="Community outreach talk at a shopping mall" loading="lazy">
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__kind">Profile · 27Fall</div>
+            <h3 class="work-card__title">About Jason</h3>
+            <p class="work-card__lede">Shenzhen Middle School Intl. — an un-templated application profile.</p>
+            <p class="work-card__excerpt">
+              GPA 4.52 / SAT 1570 / TOEFL 117 / 11 APs all 5s.
+              But numbers are never the persona — they're only the entry ticket.
+            </p>
+            <div class="work-card__foot">
+              <span>Read CV · Activities</span>
+              <span class="work-card__arrow">→</span>
+            </div>
           </div>
         </a>
       </div>
@@ -272,16 +333,66 @@
         </div>
         <div class="stat">
           <div class="stat__num stat__num--ember">1570</div>
-          <div class="stat__label">SAT · within top 1%<br>globally</div>
+          <div class="stat__label">SAT · top 1%<br>globally</div>
         </div>
         <div class="stat">
           <div class="stat__num stat__num--sky">3</div>
           <div class="stat__label">years of independent<br>research</div>
         </div>
         <div class="stat">
-          <div class="stat__num stat__num--sky">1</div>
+          <div class="stat__num stat__num--green">1</div>
           <div class="stat__label">thesis: materials<br>protect fragile systems</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHERE I'M APPLYING ============ -->
+  <section class="section section--paper" style="border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__num">04 · Where I'm applying</span>
+        <h2 class="section-head__title">27Fall — global application list.</h2>
+        <p class="section-head__lede">
+          Materials science + chemistry, with a through-line of bioengineering and
+          computational drug discovery. Open to both research-first programs
+          and entrepreneurial / product-driven environments.
+        </p>
+      </div>
+
+      <div class="schools reveal">
+        <a class="school" href="https://www.stanford.edu/" target="_blank" rel="noopener">
+          <span class="school__name">Stanford</span>
+          <span class="school__round school__round--rea">REA</span>
+        </a>
+        <a class="school" href="https://www.jhu.edu/" target="_blank" rel="noopener">
+          <span class="school__name">Johns Hopkins</span>
+          <span class="school__round school__round--ed">ED2</span>
+        </a>
+        <a class="school" href="https://www.berkeley.edu/" target="_blank" rel="noopener">
+          <span class="school__name">UC Berkeley</span>
+          <span class="school__round school__round--rd">RD</span>
+        </a>
+        <a class="school" href="https://www.northwestern.edu/" target="_blank" rel="noopener">
+          <span class="school__name">Northwestern</span>
+          <span class="school__round school__round--rd">RD</span>
+        </a>
+        <a class="school" href="https://www.upenn.edu/" target="_blank" rel="noopener">
+          <span class="school__name">UPenn</span>
+          <span class="school__round school__round--rd">RD</span>
+        </a>
+        <a class="school" href="https://www.universityofcalifornia.edu/" target="_blank" rel="noopener">
+          <span class="school__name">UC system</span>
+          <span class="school__round school__round--rd">RD</span>
+        </a>
+        <a class="school" href="https://hkust.edu.hk/" target="_blank" rel="noopener">
+          <span class="school__name">HKUST IRE</span>
+          <span class="school__round school__round--ea">Asia</span>
+        </a>
+        <a class="school" href="writing/index.html#application-strategy">
+          <span class="school__name">Read my strategy →</span>
+          <span class="school__round school__round--ea">Note</span>
+        </a>
       </div>
     </div>
   </section>
@@ -290,10 +401,10 @@
   <section class="section">
     <div class="container container--narrow">
       <div class="section-head">
-        <span class="section-head__num">04 · Timeline</span>
+        <span class="section-head__num">05 · Timeline</span>
         <h2 class="section-head__title">From fire alarm to lab bench.</h2>
         <p class="section-head__lede">
-          这条线不是规划出来的，是被一次次真实场景推出来的。
+          This line wasn't planned. It was pushed out by real scenes, one after another.
         </p>
       </div>
 
@@ -301,27 +412,37 @@
         <div class="tl-item">
           <div class="tl-item__date">2022 · Spring</div>
           <h3 class="tl-item__title">A fire alarm. A first reaction.</h3>
-          <p class="tl-item__body">校园火警演练。我研究防火，知道风险——但警报响起的第一秒，反应还是"不可能是真的"。这秒，成了我后来所有项目的种子。</p>
+          <p class="tl-item__body">A campus fire drill. I research fire safety, I know the risk — but the first second after the alarm, my reaction was still "this can't be real." That second became the seed of every project that followed.</p>
         </div>
         <div class="tl-item">
           <div class="tl-item__date">2023 · Summer</div>
-          <h3 class="tl-item__title">SafeHome v1 · 校园宿舍试点</h3>
-          <p class="tl-item__body">自研灭火涂层与应急包，进入深中宿舍与深圳社区消防角。产品形态在真实场景里反复被打磨。</p>
+          <h3 class="tl-item__title">SafeHome v1 · campus dorm pilots</h3>
+          <p class="tl-item__body">Self-developed fire-retardant coating and emergency kit, deployed into Shenzhen Middle School dorms and Shenzhen community fire-safety stations. The product form was hammered into shape by real-world use.</p>
         </div>
         <div class="tl-item">
           <div class="tl-item__date">2024 · Fall</div>
-          <h3 class="tl-item__title">Chemisfun · 公开科普</h3>
-          <p class="tl-item__body">化学科普平台正式运行。开始写"普通人能听懂、愿意相信、愿意行动"的化学。</p>
+          <h3 class="tl-item__title">Chemisfun · public science writing</h3>
+          <p class="tl-item__body">The science communication platform went live. Started writing chemistry that ordinary people can hear, believe, and act on.</p>
         </div>
-        <div class="tl-item">
+        <div class="tl-item tl-item--blue">
           <div class="tl-item__date">2025 · Spring</div>
-          <h3 class="tl-item__title">Garcia Lab · 水凝胶研究</h3>
-          <p class="tl-item__body">进入水凝胶课题组，把同一类材料思维从环境推向身体——皮肤修复、组织修复、伤口愈合。</p>
+          <h3 class="tl-item__title">Garcia Lab · hydrogel research</h3>
+          <p class="tl-item__body">Joined the Garcia Lab to study hydrogels, pushing the same material thinking from environment into the body — wound healing, tissue repair, skin barrier.</p>
+        </div>
+        <div class="tl-item tl-item--blue">
+          <div class="tl-item__date">2025 · Summer — 2026</div>
+          <h3 class="tl-item__title">27Fall · application season</h3>
+          <p class="tl-item__body">All threads converge: chemistry, materials science, product deployment, community impact, interdisciplinary curiosity. Stanford REA → JHU ED2 → UCB / Northwestern / UPenn / UC system / HKUST IRE.</p>
         </div>
         <div class="tl-item">
-          <div class="tl-item__date">2025 · Summer — 2026</div>
-          <h3 class="tl-item__title">27Fall · 申请季</h3>
-          <p class="tl-item__body">所有主线汇合：化学 / 材料科学 / 产品落地 / 社区影响 / 跨学科好奇心。Stanford REA → JHU ED2 → UC 系统 / UPenn 等。</p>
+          <div class="tl-item__date">2026 · Aug</div>
+          <h3 class="tl-item__title">ICICR 2026 · Paris · paper accepted</h3>
+          <p class="tl-item__body">First cross-disciplinary paper — a multi-modal deep learning framework for Alzheimer's drug repositioning, integrating GNN, transformers, and knowledge graphs with uncertainty quantification. Presented at ICICR 2026, Paris.</p>
+        </div>
+        <div class="tl-item tl-item--blue">
+          <div class="tl-item__date">2026 · Sep</div>
+          <h3 class="tl-item__title">Application season in motion</h3>
+          <p class="tl-item__body">Stanford REA submitted, UCB info-session in progress, Northwestern dossier in review, HKUST IRE preparation underway. This page updates as the season unfolds.</p>
         </div>
       </div>
     </div>
@@ -331,10 +452,10 @@
   <section class="section" style="background: var(--c-card-2); border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);">
     <div class="container">
       <div class="section-head">
-        <span class="section-head__num">05 · Writing</span>
+        <span class="section-head__num">06 · Writing</span>
         <h2 class="section-head__title">Notes, reflections, science.</h2>
         <p class="section-head__lede">
-          一些我写下来的东西——关于材料、风险、与相信的成本。
+          Some things I've written — about materials, risk, and the cost of believing.
         </p>
       </div>
 
@@ -342,32 +463,32 @@
         <article class="essay">
           <div class="essay__date">2026 · 07</div>
           <div>
-            <h3 class="essay__title"><a href="writing/index.html#believing">防火最大的缺口，不是知道，而是相信</a></h3>
-            <p class="essay__excerpt">从一次火警演练说起，解释为什么"知道"和"相信"是两件事，以及这如何塑造了我做 Chemisfun 的方式。</p>
+            <h3 class="essay__title"><a href="writing/index.html#believing">The biggest gap in fire safety isn't knowing — it's believing</a></h3>
+            <p class="essay__excerpt">From a fire drill, why "knowing" and "believing" are two different things — and how that shaped the way I run Chemisfun.</p>
             <div class="tags"><span class="tag tag--ember">Essay</span><span class="tag">Risk</span><span class="tag">Communication</span></div>
           </div>
         </article>
         <article class="essay">
           <div class="essay__date">2026 · 06</div>
           <div>
-            <h3 class="essay__title"><a href="writing/index.html#hydrogel">水凝胶不是新材料，是新材料观</a></h3>
-            <p class="essay__excerpt">同一个分子网络，既能灭火，也能修复皮肤——这中间发生了什么？我在 Garcia Lab 的第一年笔记。</p>
+            <h3 class="essay__title"><a href="writing/index.html#hydrogel">Hydrogel isn't a new material — it's a new material view</a></h3>
+            <p class="essay__excerpt">The same molecular network can fight fire and repair skin. What happens in between? Notes from year one in the Garcia Lab.</p>
             <div class="tags"><span class="tag tag--sky">Research Note</span><span class="tag">Hydrogel</span></div>
           </div>
         </article>
         <article class="essay">
           <div class="essay__date">2026 · 04</div>
           <div>
-            <h3 class="essay__title"><a href="writing/index.html#safehome">为什么 SafeHome 不只是"灭火产品"</a></h3>
-            <p class="essay__excerpt">一个产品能不能被使用，取决于它有没有降低人的心理阻力，而不是它有多"正确"。</p>
+            <h3 class="essay__title"><a href="writing/index.html#safehome">Why SafeHome isn't just a "fire-suppressant product"</a></h3>
+            <p class="essay__excerpt">Whether a product gets used depends on whether it lowers the psychological cost — not on how "correct" it is.</p>
             <div class="tags"><span class="tag tag--ember">Product</span><span class="tag">Behavioral design</span></div>
           </div>
         </article>
         <article class="essay">
           <div class="essay__date">2026 · 02</div>
           <div>
-            <h3 class="essay__title"><a href="writing/index.html#chemisfun">Chemisfun 写作守则：我怎么把一个分子讲给所有人</a></h3>
-            <p class="essay__excerpt">不删术语、不降智、不夸张。把自己当一个诚实的朋友。</p>
+            <h3 class="essay__title"><a href="writing/index.html#chemisfun">Chemisfun's writing rules: how I explain one molecule to everyone</a></h3>
+            <p class="essay__excerpt">Don't cut the jargon, don't dumb it down, don't exaggerate. Be the honest friend.</p>
             <div class="tags"><span class="tag">Craft</span><span class="tag">Science writing</span></div>
           </div>
         </article>
@@ -383,36 +504,65 @@
   <section class="section">
     <div class="container container--narrow center">
       <div class="section-head" style="align-items: center; text-align: center; margin-left: auto; margin-right: auto;">
-        <span class="section-head__num">06 · Get in touch</span>
+        <span class="section-head__num">07 · Get in touch</span>
         <h2 class="section-head__title">Open to conversations.</h2>
         <p class="section-head__lede">
-          对材料科学、产品落地、风险传播、或者申请季本身有任何想法——
-          都欢迎写信给我。我会认真读每一封。
+          Materials science, product deployment, risk communication, or the
+          application season itself — any of these, drop me a line.
+          I read every email.
         </p>
       </div>
       <div class="tags" style="justify-content: center; margin-top: var(--s-6);">
-        <a href="mailto:jason.shang@outlook.com" class="tag tag--ember" style="font-size: 0.85rem; padding: 8px 16px;">jason.shang@outlook.com</a>
+        <a href="mailto:jason.shang@outlook.com" class="tag tag--ember" style="font-size: 0.9rem; padding: 10px 20px;">jason.shang@outlook.com</a>
       </div>
       <p class="muted mono" style="margin-top: var(--s-6); font-size: 0.82rem;">
-        Shenzhen, CN · Class of 2027 · Materials Science, Chemistry
+        Shenzhen, CN · Class of 2027 · Materials Science, Chemistry · AI
       </p>
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container footer__inner">
       <div>
         <div class="footer__brand">Jason Shang · 商传溯</div>
         <p class="footer__tag">Materials for fragile systems.</p>
       </div>
-      <div class="footer__meta">
-        <div>© 2026 · Last updated 2026.09</div>
-        <div style="margin-top: 6px;">Built with care · index.html</div>
+      <div>
+        <div class="footer__meta">
+          <div>© 2026 · Last updated 2026.09</div>
+          <div style="margin-top: 6px;">Built with care · v3</div>
+        </div>
+        <div class="footer__social">
+          <a href="mailto:jason.shang@outlook.com" aria-label="Email">@</a>
+          <a href="https://github.com/shangweilei-ops" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        </div>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script>
+    // Dark mode toggle
+    (function() {
+      const root = document.documentElement;
+      const btn = document.getElementById('theme-toggle');
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark') root.classList.add('dark');
+      if (saved === 'light') root.classList.add('light');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          const isDark = root.classList.contains('dark');
+          root.classList.remove('dark', 'light');
+          if (isDark) {
+            root.classList.add('light');
+            localStorage.setItem('theme', 'light');
+          } else {
+            root.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
