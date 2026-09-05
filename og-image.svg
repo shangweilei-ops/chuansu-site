@@ -49,7 +49,7 @@
     <text x="0" y="140" font-family="Instrument Serif, serif" font-size="40" font-style="italic" fill="#10B981">Human</text>
 
     <line x1="0" y1="180" x2="120" y2="180" stroke="#FF6B35" stroke-width="2"/>
-    <text x="0" y="210" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="1.5" fill="#8B95A5">SHANGHAI · CN</text>
+    <text x="0" y="210" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="1.5" fill="#8B95A5">SHENZHEN · CN</text>
     <text x="0" y="230" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="1.5" fill="#8B95A5">SHENZHEN MIDDLE SCHOOL</text>
   </g>
 </svg>
