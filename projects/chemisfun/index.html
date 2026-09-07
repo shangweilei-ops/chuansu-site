@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#FAF7F1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)">
   <title>Chemisfun · Jason Shang</title>
-  <meta name="description" content="Chemisfun——把复杂化学讲给愿意相信的人。" >
+  <meta name="description" content="Chemisfun — translating complex chemistry for people willing to believe. The most underestimated step before any material science reaches the real world.">
   <meta property="og:title" content="Chemisfun · Jason Shang">
-  <meta property="og:description" content="Chemisfun——把复杂化学讲给普通人听的科普平台。">
+  <meta property="og:description" content="Translating complex chemistry for ordinary people. Articles, videos, in-person workshops.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chuansu-site.shangweilei.workers.dev/projects/chemisfun/">
-  <meta property="og:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.svg">
   <meta property="og:site_name" content="Jason Shang">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Chemisfun · Jason Shang">
-  <meta name="twitter:description" content="Chemisfun——把复杂化学讲给普通人听的科普平台。">
-  <meta name="twitter:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.jpg">
+  <meta name="author" content="Jason Shang">
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
 <body>
@@ -31,26 +30,34 @@
         <span class="nav__mark">JS</span><span>Jason Shang</span>
       </a>
       <button class="nav__menu-btn" aria-label="Toggle menu" aria-expanded="false">
-        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="0" y1="2" x2="18" y2="2"/><line x1="0" y1="12" x2="18" y2="12"/><line x1="0" y1="7" x2="18" y2="7"/></svg>
+        <svg class="open" width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="2" y1="2" x2="16" y2="2"/><line x1="2" y1="7" x2="16" y2="7"/><line x1="2" y1="12" x2="16" y2="12"/></svg>
+        <svg class="close" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="3" x2="15" y2="15"/><line x1="15" y1="3" x2="3" y2="15"/></svg>
       </button>
       <ul class="nav__links">
         <li><a href="../../index.html">Home</a></li>
         <li><a href="../../research/index.html">Research</a></li>
-        <li><a href="../safehome/index.html">SafeHome</a></li>
-        <li><a href="index.html">Chemisfun</a></li>
+        <li><a href="../safehome/index.html">Projects</a></li>
         <li><a href="../../writing/index.html">Writing</a></li>
         <li><a href="../../about/index.html">About</a></li>
       </ul>
+      <div class="nav__tools">
+        <button class="nav__theme" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-icon-light">☀</span>
+          <span class="theme-icon-dark">☾</span>
+        </button>
+      </div>
     </div>
   </nav>
 
   <header class="article-head">
-    <div class="container">
+    <div class="container article-head__inner">
       <div class="article-head__kind">Communication · Outreach</div>
-      <h1 class="article-head__title">Chemisfun</h1>
+      <h1 class="article-head__title">Chemisfun.</h1>
       <p class="article-head__lede">
-        不只是"科普号"。是我相信材料科学落地前最被低估的一环——
-        把复杂的东西，翻译成普通人能理解、愿意相信、愿意行动的语言。
+        Not just a "popular-science account". It's the step I believe is most
+        underestimated before any material science reaches the real world:
+        translating complexity into a language ordinary people can understand,
+        believe, and act on.
       </p>
       <div class="tags" style="margin-top: var(--s-5);">
         <span class="tag">Communication</span>
@@ -70,82 +77,85 @@
 
     <h2>Why I started it</h2>
     <p>
-      做灭火研究的时候，我很快意识到：最大的瓶颈不在材料、不在制造，而在<em>认知</em>。
-      普通人不会买灭火贴片，不是因为它贵，而是因为他们不相信自己会需要。
+      While researching fire suppression, I realized quickly: the biggest bottleneck
+      isn't the material, isn't manufacturing — it's <em>cognition</em>. Ordinary people
+      don't buy a suppression patch not because it's expensive, but because they don't
+      believe they'll need it.
     </p>
     <p>
-      Chemisfun 起源于我自己想解决这个问题：
-      <em>把化学讲成一个愿意相信的故事。</em>
+      Chemisfun started from me wanting to solve this problem:
+      <em>make chemistry a story people can believe.</em>
     </p>
 
     <figure class="figure">
-      <img src="../../assets/img/chemisfun-kids.jpg" alt="线下科普活动 · 和小朋友互动" loading="lazy">
+      <img src="../../assets/img/chemisfun-kids.jpg" alt="In-person science outreach with kids" loading="lazy">
       <figcaption class="figure__cap">
         <span class="k">Outreach · Community</span>
-        <span>线下科普 · 把问题问给最年轻的人</span>
+        <span>Live science communication · asking the youngest audience first</span>
       </figcaption>
     </figure>
 
     <h2>What I write about</h2>
     <ul>
-      <li>生活中的化学误解（"无糖饮料不会蛀牙"是真的吗？）</li>
-      <li>材料科学背后的真实故事（灭火涂层是怎么工作的）</li>
-      <li>风险与安全（为什么锂电池会自燃）</li>
-      <li>皮肤 / 伤口 / 健康相关的化学原理</li>
+      <li>Everyday chemistry myths (is "sugar-free" really safe for teeth?)</li>
+      <li>The real stories behind material science (how a fire-retardant coating actually works)</li>
+      <li>Risk and safety (why lithium batteries self-ignite)</li>
+      <li>The chemistry of skin, wounds, and health</li>
     </ul>
 
     <div class="figure-grid">
       <figure class="figure">
-        <img src="../../assets/img/chemisfun-classroom.jpg" alt="教室防火讲座 · 投影 PPT 讲解" loading="lazy">
+        <img src="../../assets/img/chemisfun-classroom.jpg" alt="Classroom fire-safety talk" loading="lazy">
         <figcaption class="figure__cap">
           <span class="k">Classroom</span>
-          <span>家长进课堂 · 防火讲座</span>
+          <span>Parents into the classroom · fire-safety talk</span>
         </figcaption>
       </figure>
       <figure class="figure">
-        <img src="../../assets/img/chemisfun-qa.jpg" alt="学生互动问答环节" loading="lazy">
+        <img src="../../assets/img/chemisfun-qa.jpg" alt="Student Q&A session" loading="lazy">
         <figcaption class="figure__cap">
           <span class="k">Q&amp;A</span>
-          <span>互动问答 · 学生举手回答</span>
+          <span>Interactive Q&A · students raising hands</span>
         </figcaption>
       </figure>
     </div>
 
     <figure class="figure">
-      <img src="../../assets/img/chemisfun-community.jpg" alt="社区讲座全景" loading="lazy">
+      <img src="../../assets/img/chemisfun-community.jpg" alt="Community lecture overview" loading="lazy">
       <figcaption class="figure__cap">
         <span class="k">Community Talk</span>
-        <span>商场社区讲座 · 听众席 · 2026</span>
+        <span>Shopping mall community lecture · audience · 2026</span>
       </figcaption>
     </figure>
 
     <h2>How I write — the rules I keep</h2>
     <blockquote>
-      "不删术语，不降智，不夸张。把自己当一个诚实的朋友。"
+      "Don't cut the jargon, don't dumb it down, don't exaggerate. Be the honest friend."
     </blockquote>
     <ul>
-      <li><strong>不删术语</strong>——把术语讲清楚，而不是绕开它。</li>
-      <li><strong>不降智</strong>——读者比我想象的更聪明。</li>
-      <li><strong>不夸张</strong>——危险被夸大过太多次，相信的成本被透支过太多次。</li>
-      <li><strong>结构先行</strong>——每一篇都要回答一个具体问题。</li>
+      <li><strong>Don't cut the jargon</strong> — explain the term clearly, don't dodge around it.</li>
+      <li><strong>Don't dumb it down</strong> — readers are smarter than I think.</li>
+      <li><strong>Don't exaggerate</strong> — danger has been exaggerated too many times; the cost of believing has been burned too many times.</li>
+      <li><strong>Structure first</strong> — every piece must answer one specific question.</li>
     </ul>
 
     <h2>What this is for — intellectually</h2>
     <p>
-      Stanford 喜欢的那种 intellectual vitality——不是学会了知识，
-      而是<em>重新组织知识、传播知识、改变他人理解</em>。
-      Chemisfun 是这件事的载体。
+      The kind of <em>intellectual vitality</em> Stanford values isn't "I learned
+      knowledge" — it's <em>reorganizing knowledge, transmitting it, and changing
+      how other people understand it</em>. Chemisfun is the vehicle for that.
     </p>
     <p>
-      对 Penn / JHU 同样有意义：Penn 看 Doer、看 product + impact、看 community；
-      JHU 看跨学科深度。Chemisfun 不是"额外活动"，而是这条主线的人性层。
+      The same applies to Penn and JHU: Penn looks for doers — product + impact +
+      community; JHU looks for cross-disciplinary depth. Chemisfun isn't an "extra
+      activity" — it's the human layer of the same thesis.
     </p>
 
     <h2>Recent pieces</h2>
     <ul>
-      <li>《为什么你的充电宝会自燃》——一篇关于锂电池热失控的长文</li>
-      <li>《水凝胶真的能"修复"皮肤吗》——回应实验室工作的科普</li>
-      <li>《厨房灭火的三秒原则》——配合 SafeHome 的社区讲座稿</li>
+      <li>Why your power bank self-ignites — a long read on lithium thermal runaway</li>
+      <li>Can hydrogels really "repair" skin? — a popular-science response to my lab work</li>
+      <li>The 3-second rule for kitchen fires — a community lecture script for SafeHome pilots</li>
     </ul>
 
   </article>
@@ -155,23 +165,23 @@
     <div class="container">
       <div class="section-head">
         <span class="section-head__num">Related</span>
-        <h2 class="section-head__title">这条线的另两端</h2>
+        <h2 class="section-head__title">Other ends of the same line</h2>
       </div>
       <div class="related">
         <a href="../../research/index.html" class="related__card">
           <div class="related__kind">Research</div>
           <h3 class="related__title">Hydrogel &amp; Skin Repair</h3>
-          <p class="related__desc">从分子到机制——我研究的深度。</p>
+          <p class="related__desc">From molecule to mechanism — the depth of my research.</p>
         </a>
         <a href="../safehome/index.html" class="related__card">
           <div class="related__kind">Product</div>
           <h3 class="related__title">SafeHome</h3>
-          <p class="related__desc">把研究变成真实场景里能用的产品。</p>
+          <p class="related__desc">Turning research into products people can use in real scenarios.</p>
         </a>
         <a href="../../writing/index.html#chemisfun" class="related__card">
           <div class="related__kind">Writing</div>
-          <h3 class="related__title">Chemisfun 写作守则</h3>
-          <p class="related__desc">关于我的写作原则。</p>
+          <h3 class="related__title">Chemisfun's writing rules</h3>
+          <p class="related__desc">My principles for explaining one molecule to everyone.</p>
         </a>
       </div>
     </div>
@@ -183,13 +193,36 @@
         <div class="footer__brand">Jason Shang · 商传溯</div>
         <p class="footer__tag">Materials for fragile systems.</p>
       </div>
-      <div class="footer__meta">
-        <div>© 2026 · Last updated 2026.09</div>
-        <div style="margin-top: 6px;">projects/chemisfun/index.html</div>
+      <div>
+        <div class="footer__meta">
+          <div>© 2026 · Last updated 2026.09</div>
+          <div style="margin-top: 6px;">projects/chemisfun/index.html · v3</div>
+        </div>
+        <div class="footer__social">
+          <a href="mailto:jason.shang@outlook.com" aria-label="Email">@</a>
+          <a href="https://github.com/shangweilei-ops" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        </div>
       </div>
     </div>
   </footer>
 
   <script src="../../assets/js/main.js"></script>
+  <script>
+    (function() {
+      const root = document.documentElement;
+      const btn = document.getElementById('theme-toggle');
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark') root.classList.add('dark');
+      if (saved === 'light') root.classList.add('light');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          const isDark = root.classList.contains('dark');
+          root.classList.remove('dark', 'light');
+          if (isDark) { root.classList.add('light'); localStorage.setItem('theme', 'light'); }
+          else { root.classList.add('dark'); localStorage.setItem('theme', 'dark'); }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

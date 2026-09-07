@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research · Jason Shang</title>
-  <meta name="description" content="水凝胶与皮肤修复研究——从灭火材料到组织修复的材料科学。" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#FAF7F1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)">
+  <title>Research · Jason Shang · Hydrogel, AI, Fire-safe Materials</title>
+  <meta name="description" content="Research threads: Garcia Lab hydrogels for skin repair, fire-safe materials from SafeHome, and ICICR 2026 paper on multi-modal deep learning for Alzheimer's drug repositioning.">
   <meta property="og:title" content="Research · Jason Shang">
-  <meta property="og:description" content="水凝胶与皮肤修复研究——从灭火材料到组织修复的材料科学。">
+  <meta property="og:description" content="Hydrogel &amp; skin repair · fire-safe materials · ICICR 2026 AI paper.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chuansu-site.shangweilei.workers.dev/research/">
-  <meta property="og:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.svg">
   <meta property="og:site_name" content="Jason Shang">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Research · Jason Shang">
-  <meta name="twitter:description" content="水凝胶与皮肤修复研究——从灭火材料到组织修复的材料科学。">
-  <meta name="twitter:image" content="https://chuansu-site.shangweilei.workers.dev/og-image.jpg">
+  <meta name="author" content="Jason Shang">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
@@ -31,30 +30,39 @@
         <span class="nav__mark">JS</span><span>Jason Shang</span>
       </a>
       <button class="nav__menu-btn" aria-label="Toggle menu" aria-expanded="false">
-        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="0" y1="2" x2="18" y2="2"/><line x1="0" y1="12" x2="18" y2="12"/><line x1="0" y1="7" x2="18" y2="7"/></svg>
+        <svg class="open" width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="2" y1="2" x2="16" y2="2"/><line x1="2" y1="7" x2="16" y2="7"/><line x1="2" y1="12" x2="16" y2="12"/></svg>
+        <svg class="close" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="3" x2="15" y2="15"/><line x1="15" y1="3" x2="3" y2="15"/></svg>
       </button>
       <ul class="nav__links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="index.html">Research</a></li>
-        <li><a href="../projects/safehome/index.html">SafeHome</a></li>
-        <li><a href="../projects/chemisfun/index.html">Chemisfun</a></li>
+        <li><a href="../projects/safehome/index.html">Projects</a></li>
         <li><a href="../writing/index.html">Writing</a></li>
         <li><a href="../about/index.html">About</a></li>
       </ul>
+      <div class="nav__tools">
+        <button class="nav__theme" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-icon-light">☀</span>
+          <span class="theme-icon-dark">☾</span>
+        </button>
+      </div>
     </div>
   </nav>
 
   <header class="article-head">
-    <div class="container">
-      <div class="article-head__kind">Research · Lab Notebook</div>
-      <h1 class="article-head__title">Hydrogel &amp; Skin Repair</h1>
+    <div class="container article-head__inner">
+      <div class="article-head__kind">Research · Lab Notebook + Papers</div>
+      <h1 class="article-head__title">Hydrogel, AI, fire-safe materials.</h1>
       <p class="article-head__lede">
-        从灭火材料到组织修复——同一类材料思维在不同尺度上的展开。
+        Three research threads, one underlying question:
+        <em>how do protective systems work — at the molecular level, the device level, and the
+        computational level?</em>
       </p>
       <div class="tags" style="margin-top: var(--s-5);">
         <span class="tag tag--sky">Hydrogel</span>
         <span class="tag tag--sky">Skin Repair</span>
-        <span class="tag tag--sky">Biomaterials</span>
+        <span class="tag tag--green">AI · Drug Discovery</span>
+        <span class="tag">Fire-safe Materials</span>
         <span class="tag">2025 — Present</span>
       </div>
     </div>
@@ -62,44 +70,85 @@
 
   <article class="prose">
 
+    <!-- ========== ICICR 2026 Publication ========== -->
+    <section id="icicr" style="background: var(--c-card); border: 1px solid color-mix(in srgb, var(--c-ember) 25%, var(--c-line)); border-radius: var(--radius); padding: var(--s-6); margin: var(--s-6) 0 var(--s-9); box-shadow: var(--shadow);">
+      <div class="k" style="font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-ember-deep); margin-bottom: var(--s-2);">📄 Publication · Accepted Aug 2026</div>
+      <h2 style="margin-top: 0;">Multi-Modal Deep Learning for Alzheimer's Drug Repositioning</h2>
+      <p class="muted" style="font-family: var(--f-mono); font-size: 0.85rem; margin-bottom: var(--s-4);">
+        ICICR 2026 · Paris, France · June 12–14, 2026 · Paper ID: A20260302530339
+      </p>
+      <p>
+        <strong>Authors:</strong> Xiuqin Shang, <strong>Chuansu Shang</strong> &nbsp;·&nbsp;
+        <strong>Conference:</strong> 2026 3rd International Conference on Intelligent Computing and Robotics
+      </p>
+      <p>
+        A multi-modal deep learning framework that integrates Graph Neural Networks,
+        Transformers, and Knowledge Graphs with explicit uncertainty quantification —
+        applied to drug repositioning for Alzheimer's disease. The work combines
+        heterogeneous biomedical signals (chemical structure, protein interaction,
+        prior knowledge) to surface candidates that single-modality models miss,
+        and quantifies how confident the model should be in each prediction.
+      </p>
+      <p>
+        <strong>Why this is on a materials science site:</strong> the same question runs
+        through all my work — <em>how does a fragile system (a building, a wound, a brain)
+        get protected before failure?</em> Drug repositioning is the same problem at
+        another scale. This is my first cross-disciplinary publication.
+      </p>
+      <p>
+        <a href="https://chuansu-site.shangweilei.workers.dev/research/#icicr" class="tag tag--ember" style="padding: 8px 16px; font-size: 0.85rem;">Read the abstract →</a>
+      </p>
+    </section>
+
+    <!-- ========== Hydrogel Research ========== -->
+    <h2>Hydrogel &amp; Skin Repair · Garcia Lab</h2>
+    <p class="muted" style="font-family: var(--f-mono); font-size: 0.85rem; margin-bottom: var(--s-4);">
+      Spring 2025 — Present · Prof. Garcia
+    </p>
+
     <div class="meta-strip">
       <div class="meta-strip__item"><div class="k">Mentor</div><div class="v">Prof. Garcia</div></div>
       <div class="meta-strip__item"><div class="k">Field</div><div class="v">Biomaterials</div></div>
       <div class="meta-strip__item"><div class="k">Status</div><div class="v">In progress</div></div>
     </div>
 
-    <h2>Why hydrogel?</h2>
+    <h3>Why hydrogel?</h3>
     <p>
-      做灭火材料的时候，我学到的最重要一件事不是"什么材料能灭火"，而是"为什么这种材料在极端条件下还能工作"。水凝胶对我来说是一个自然的延伸——
-      <em>同一个分子网络问题，一个面向环境，一个面向身体。</em>
+      Working on fire-suppressant materials taught me the most important thing
+      wasn't "which material can extinguish" — it was <em>why this material still works
+      under extreme conditions</em>. Hydrogel is a natural extension: the same
+      molecular-network question, but now facing the body instead of the environment.
     </p>
 
     <figure class="figure">
-      <img src="../assets/img/research-lab.jpg" alt="在 Garcia 实验室做水凝胶合成的日常工作" loading="lazy">
+      <img src="../assets/img/research-lab.jpg" alt="Daily work in Garcia Lab — hydrogel synthesis" loading="lazy">
       <figcaption class="figure__cap">
         <span class="k">Field · Lab Bench</span>
-        <span>Garcia Lab · 水凝胶合成日常 · 2025</span>
+        <span>Garcia Lab · hydrogel synthesis bench · 2025</span>
       </figcaption>
     </figure>
+
     <p>
-      一个能在火焰下保持结构完整性的水凝胶，往往也能在伤口湿润环境下保持结构完整性。一个能阻断热传导的分子设计，也有可能被翻译成阻断炎症扩散的分子设计。
-      这种"看似不同的场景下，材料在做同一件事"的感觉，是我做这件事的核心动力。
+      A hydrogel that maintains structural integrity under flame conditions can
+      often do the same in a moist wound environment. A molecular design that blocks
+      heat conduction can sometimes be translated into a physical barrier against
+      cytokine diffusion. That feeling of "different scenes, same material
+      doing the same job" is the core drive behind this work.
     </p>
 
-    <h2>Current work</h2>
-    <p>
-      目前在 Garcia 课题组参与水凝胶方向研究，关注三个方向：
-    </p>
+    <h3>Current threads</h3>
     <ul>
-      <li><strong>材料结构：</strong>交联密度、孔径分布、含水量对力学性能的影响</li>
-      <li><strong>生物相容性：</strong>在与皮肤 / 伤口微环境的耦合中，是否支持细胞迁移</li>
-      <li><strong>应用场景：</strong>从大面积烧伤创面到慢性伤口的覆盖方案</li>
+      <li><strong>Material structure:</strong> crosslink density, pore distribution, water content vs. mechanical behavior</li>
+      <li><strong>Biocompatibility:</strong> coupling with the skin / wound microenvironment, support for cell migration</li>
+      <li><strong>Application scenarios:</strong> large-area burn coverage and chronic wound dressings</li>
     </ul>
 
-    <h2>From fire to skin — the through-line</h2>
+    <h3>From fire to skin — the through-line</h3>
     <p>
-      我意识到，把灭火和皮肤修复写成两个独立项目是错的。它们是同一个项目的两端：
-      <em>保护脆弱系统。</em>灭火涂层保护的是建筑和人体免于热失控，水凝胶保护的是正在愈合的组织免于二次损伤。
+      I've stopped writing fire-suppression and skin-repair as two separate projects.
+      They're the two ends of the same project: <em>protecting fragile systems</em>.
+      Fire-retardant coating protects the building and the human body from thermal
+      runaway; hydrogel protects healing tissue from secondary damage.
     </p>
 
     <blockquote>
@@ -107,29 +156,48 @@
       expanded into a different scale."
     </blockquote>
 
-    <h2>What I hope to produce</h2>
-    <p>
-      短期目标至少完成以下其中一项：
-    </p>
+    <h3>What I hope to produce</h3>
+    <p>Short-term: at least one of the following —</p>
     <ul>
-      <li>一份可投递会议的海报 / 论文初稿</li>
-      <li>一份有实验数据的 Garcia 课题组推荐信</li>
-      <li>一组可在 Chemisfun / 课堂上使用的可视化结果</li>
+      <li>A submittable conference poster or paper draft</li>
+      <li>A research letter of recommendation from the Garcia group with real data</li>
+      <li>A set of visual results usable in Chemisfun / classroom</li>
     </ul>
     <p>
-      长期目标是把水凝胶研究方向和申请材料 (Why Major / Why JHU / UC PIQ) 串成一条可分发的逻辑，而不是两份拼凑的文书。
+      Long-term: weave the hydrogel thread into application essays
+      (Why Major / Why JHU / UC PIQs) as a single, shareable logic — not two
+      stitched essays.
     </p>
 
-    <h2>Tools &amp; methods</h2>
+    <h3>Tools &amp; methods</h3>
     <p>
-      文献综述 · 实验设计 · 数据记录 · 失败复盘 · 论文写作。
-      实验部分涉及基础的材料合成与表征（FTIR、SEM、溶胀率测试），以及细胞相容性的初步评估。
+      Literature review · experiment design · data logging · failure iteration · paper writing.
+      Lab work covers basic synthesis and characterization (FTIR, SEM, swelling ratio),
+      plus preliminary cell-compatibility evaluation.
     </p>
 
-    <h2>Honest position</h2>
+    <h3>Honest position</h3>
     <p>
-      我不是一个发表过论文的科研型申请者。我是一个把三年时间花在"同一类材料思维的不同场景"上的高中生。
-      我的研究产出还在路上——这恰恰是我申请季最想推进的事。
+      I'm not a published research applicant. I'm a high-school student who has spent
+      three years on the same material thinking across different scenes. The research
+      output is still on its way — and that's exactly what I most want to push forward
+      during this application season.
+    </p>
+
+    <!-- ========== Fire-safe Materials ========== -->
+    <h2>Fire-safe Materials · SafeHome origin</h2>
+    <p class="muted" style="font-family: var(--f-mono); font-size: 0.85rem; margin-bottom: var(--s-4);">
+      2022 — Present · Self-initiated, deployed in real settings
+    </p>
+    <p>
+      The first chapter of my material thinking: fire-suppressant coatings and patches
+      for the household / dorm scenario. Started in 9th grade, deployed into
+      <a href="../projects/safehome/index.html">SafeHome</a> pilots from 2023.
+    </p>
+    <p>
+      This thread is no longer the primary research vehicle, but the lab mindset
+      — failure iteration, side-effect awareness, scale-up thinking — feeds
+      directly into the Garcia Lab work.
     </p>
 
   </article>
@@ -139,23 +207,23 @@
     <div class="container">
       <div class="section-head">
         <span class="section-head__num">Related</span>
-        <h2 class="section-head__title">沿着这条线</h2>
+        <h2 class="section-head__title">Other threads on this site</h2>
       </div>
       <div class="related">
         <a href="../projects/safehome/index.html" class="related__card">
           <div class="related__kind">Product · Field</div>
           <h3 class="related__title">SafeHome</h3>
-          <p class="related__desc">灭火材料的真实落地——校园宿舍与社区试点。</p>
+          <p class="related__desc">Fire-suppressant materials in real households, dorms, and community stations.</p>
         </a>
         <a href="../projects/chemisfun/index.html" class="related__card">
           <div class="related__kind">Communication</div>
           <h3 class="related__title">Chemisfun</h3>
-          <p class="related__desc">把同一类材料思维讲给普通人听。</p>
+          <p class="related__desc">Translating the same material thinking for ordinary people.</p>
         </a>
-        <a href="../writing/index.html" class="related__card">
+        <a href="../writing/index.html#hydrogel" class="related__card">
           <div class="related__kind">Writing</div>
-          <h3 class="related__title">水凝胶不是新材料，是新材料观</h3>
-          <p class="related__desc">在 Garcia Lab 的第一年笔记。</p>
+          <h3 class="related__title">Hydrogel isn't a new material</h3>
+          <p class="related__desc">Notes from year one in the Garcia Lab.</p>
         </a>
       </div>
     </div>
@@ -167,13 +235,36 @@
         <div class="footer__brand">Jason Shang · 商传溯</div>
         <p class="footer__tag">Materials for fragile systems.</p>
       </div>
-      <div class="footer__meta">
-        <div>© 2026 · Last updated 2026.09</div>
-        <div style="margin-top: 6px;">research/index.html</div>
+      <div>
+        <div class="footer__meta">
+          <div>© 2026 · Last updated 2026.09</div>
+          <div style="margin-top: 6px;">research/index.html · v3</div>
+        </div>
+        <div class="footer__social">
+          <a href="mailto:jason.shang@outlook.com" aria-label="Email">@</a>
+          <a href="https://github.com/shangweilei-ops" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        </div>
       </div>
     </div>
   </footer>
 
   <script src="../assets/js/main.js"></script>
+  <script>
+    (function() {
+      const root = document.documentElement;
+      const btn = document.getElementById('theme-toggle');
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark') root.classList.add('dark');
+      if (saved === 'light') root.classList.add('light');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          const isDark = root.classList.contains('dark');
+          root.classList.remove('dark', 'light');
+          if (isDark) { root.classList.add('light'); localStorage.setItem('theme', 'light'); }
+          else { root.classList.add('dark'); localStorage.setItem('theme', 'dark'); }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
